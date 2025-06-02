@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D590C9CF2DED913B0088B233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D590C9B52DED91380088B233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D590C9BC2DED91380088B233;
+			remoteInfo = maimaidx_prober;
+		};
+		D590C9D92DED913C0088B233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D590C9B52DED91380088B233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D590C9BC2DED91380088B233;
+			remoteInfo = maimaidx_prober;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D590C9BD2DED91380088B233 /* maimaidx_prober.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maimaidx_prober.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D590C9CE2DED913B0088B233 /* maimaidx_proberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maimaidx_proberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D590C9D82DED913C0088B233 /* maimaidx_proberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maimaidx_proberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D590C9E02DED913C0088B233 /* Exceptions for "maimaidx_prober" folder in "maimaidx_prober" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D590C9BC2DED91380088B233 /* maimaidx_prober */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D590C9BF2DED91380088B233 /* maimaidx_prober */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D590C9E02DED913C0088B233 /* Exceptions for "maimaidx_prober" folder in "maimaidx_prober" target */,
+			);
+			path = maimaidx_prober;
+			sourceTree = "<group>";
+		};
+		D590C9D12DED913C0088B233 /* maimaidx_proberTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = maimaidx_proberTests;
+			sourceTree = "<group>";
+		};
+		D590C9DB2DED913C0088B233 /* maimaidx_proberUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = maimaidx_proberUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D590C9BA2DED91380088B233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D590C9CB2DED913B0088B233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D590C9D52DED913C0088B233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D590C9B42DED91380088B233 = {
+			isa = PBXGroup;
+			children = (
+				D590C9BF2DED91380088B233 /* maimaidx_prober */,
+				D590C9D12DED913C0088B233 /* maimaidx_proberTests */,
+				D590C9DB2DED913C0088B233 /* maimaidx_proberUITests */,
+				D590C9BE2DED91380088B233 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D590C9BE2DED91380088B233 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D590C9BD2DED91380088B233 /* maimaidx_prober.app */,
+				D590C9CE2DED913B0088B233 /* maimaidx_proberTests.xctest */,
+				D590C9D82DED913C0088B233 /* maimaidx_proberUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D590C9BC2DED91380088B233 /* maimaidx_prober */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D590C9E12DED913C0088B233 /* Build configuration list for PBXNativeTarget "maimaidx_prober" */;
+			buildPhases = (
+				D590C9B92DED91380088B233 /* Sources */,
+				D590C9BA2DED91380088B233 /* Frameworks */,
+				D590C9BB2DED91380088B233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D590C9BF2DED91380088B233 /* maimaidx_prober */,
+			);
+			name = maimaidx_prober;
+			packageProductDependencies = (
+			);
+			productName = maimaidx_prober;
+			productReference = D590C9BD2DED91380088B233 /* maimaidx_prober.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D590C9CD2DED913B0088B233 /* maimaidx_proberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D590C9E62DED913C0088B233 /* Build configuration list for PBXNativeTarget "maimaidx_proberTests" */;
+			buildPhases = (
+				D590C9CA2DED913B0088B233 /* Sources */,
+				D590C9CB2DED913B0088B233 /* Frameworks */,
+				D590C9CC2DED913B0088B233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D590C9D02DED913B0088B233 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D590C9D12DED913C0088B233 /* maimaidx_proberTests */,
+			);
+			name = maimaidx_proberTests;
+			packageProductDependencies = (
+			);
+			productName = maimaidx_proberTests;
+			productReference = D590C9CE2DED913B0088B233 /* maimaidx_proberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D590C9D72DED913C0088B233 /* maimaidx_proberUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D590C9E92DED913C0088B233 /* Build configuration list for PBXNativeTarget "maimaidx_proberUITests" */;
+			buildPhases = (
+				D590C9D42DED913C0088B233 /* Sources */,
+				D590C9D52DED913C0088B233 /* Frameworks */,
+				D590C9D62DED913C0088B233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D590C9DA2DED913C0088B233 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D590C9DB2DED913C0088B233 /* maimaidx_proberUITests */,
+			);
+			name = maimaidx_proberUITests;
+			packageProductDependencies = (
+			);
+			productName = maimaidx_proberUITests;
+			productReference = D590C9D82DED913C0088B233 /* maimaidx_proberUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D590C9B52DED91380088B233 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					D590C9BC2DED91380088B233 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					D590C9CD2DED913B0088B233 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D590C9BC2DED91380088B233;
+					};
+					D590C9D72DED913C0088B233 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D590C9BC2DED91380088B233;
+					};
+				};
+			};
+			buildConfigurationList = D590C9B82DED91380088B233 /* Build configuration list for PBXProject "maimaidx_prober" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D590C9B42DED91380088B233;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D590C9BE2DED91380088B233 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D590C9BC2DED91380088B233 /* maimaidx_prober */,
+				D590C9CD2DED913B0088B233 /* maimaidx_proberTests */,
+				D590C9D72DED913C0088B233 /* maimaidx_proberUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D590C9BB2DED91380088B233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D590C9CC2DED913B0088B233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D590C9D62DED913C0088B233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D590C9B92DED91380088B233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D590C9CA2DED913B0088B233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D590C9D42DED913C0088B233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D590C9D02DED913B0088B233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D590C9BC2DED91380088B233 /* maimaidx_prober */;
+			targetProxy = D590C9CF2DED913B0088B233 /* PBXContainerItemProxy */;
+		};
+		D590C9DA2DED913C0088B233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D590C9BC2DED91380088B233 /* maimaidx_prober */;
+			targetProxy = D590C9D92DED913C0088B233 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D590C9E22DED913C0088B233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = maimaidx_prober/maimaidx_prober.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF2WA4Z7B8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maimaidx_prober/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaereri.maimaidx-prober";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D590C9E32DED913C0088B233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = maimaidx_prober/maimaidx_prober.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF2WA4Z7B8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maimaidx_prober/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaereri.maimaidx-prober";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D590C9E42DED913C0088B233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = UF2WA4Z7B8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D590C9E52DED913C0088B233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = UF2WA4Z7B8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D590C9E72DED913C0088B233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF2WA4Z7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaereri.maimaidx-proberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maimaidx_prober.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/maimaidx_prober";
+			};
+			name = Debug;
+		};
+		D590C9E82DED913C0088B233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF2WA4Z7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaereri.maimaidx-proberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maimaidx_prober.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/maimaidx_prober";
+			};
+			name = Release;
+		};
+		D590C9EA2DED913C0088B233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF2WA4Z7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaereri.maimaidx-proberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = maimaidx_prober;
+			};
+			name = Debug;
+		};
+		D590C9EB2DED913C0088B233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF2WA4Z7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaereri.maimaidx-proberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = maimaidx_prober;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D590C9B82DED91380088B233 /* Build configuration list for PBXProject "maimaidx_prober" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D590C9E42DED913C0088B233 /* Debug */,
+				D590C9E52DED913C0088B233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D590C9E12DED913C0088B233 /* Build configuration list for PBXNativeTarget "maimaidx_prober" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D590C9E22DED913C0088B233 /* Debug */,
+				D590C9E32DED913C0088B233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D590C9E62DED913C0088B233 /* Build configuration list for PBXNativeTarget "maimaidx_proberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D590C9E72DED913C0088B233 /* Debug */,
+				D590C9E82DED913C0088B233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D590C9E92DED913C0088B233 /* Build configuration list for PBXNativeTarget "maimaidx_proberUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D590C9EA2DED913C0088B233 /* Debug */,
+				D590C9EB2DED913C0088B233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D590C9B52DED91380088B233 /* Project object */;
+}
