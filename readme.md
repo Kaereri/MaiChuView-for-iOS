@@ -1,0 +1,2 @@
+#MaiView 萌速查
+##使用iOS原生UI和接口开发的适用于调用水鱼获取maimai或chunithm分数信息的APP

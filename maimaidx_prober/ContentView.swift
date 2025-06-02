@@ -8,54 +8,137 @@
 import SwiftUI
 import SwiftData
 
+//UI主要控件
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        TabView{
+            //概况
+            HomeView()
+                .tabItem{
+                    Image(systemName: "house.fill")
+                    Text("首页")
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            //分数
+            ScoreView()
+                .tabItem{
+                    Image(systemName: "list.number")
+                    Text("分数")
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+            //二维码
+            CodeView()
+                .tabItem{
+                    Image(systemName: "qrcode")
+                    Text("二维码")
                 }
-            }
-        } detail: {
-            Text("Select an item")
+            //歌曲
+            MusicView()
+                .tabItem{
+                    Image(systemName: "music.note.list")
+                    Text("歌曲")
+                }
+            //选项
+            ToolsView()
+                .tabItem{
+                    Image(systemName: "wrench.and.screwdriver")
+                    Text("工具")
+                }
+            
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
+}
+#Preview{
+        ContentView()
     }
 
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+// 概况界面
+struct HomeView:View{
+    @State private var showAccountMenu:Bool = false
+    //账户选项
+    var body:some View{
+        NavigationStack{
+            Text("")
+                .navigationTitle("概况")
+                .toolbar {
+                    // 账户
+                    ToolbarItem(placement: .topBarTrailing){
+                        Button(
+                            action: {
+                                showAccountMenu = true
+                            }
+                        ){
+                            Image(systemName: "person.crop.circle")
+                        }
+                    }
+                }
+            // 传分
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing){
+                        Button(
+                            action: {
+                                print("")
+                            }
+                        ){
+                            Image(systemName: "icloud.and.arrow.up")
+                        }
+                    }
+                }
+            // 重新获取信息
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing){
+                        Button(
+                            action: {
+                                print("")
+                            }
+                        ){
+                            Image(systemName: "arrow.trianglehead.2.clockwise.rotate.90.icloud")
+                        }
+                    }
+                }
+            
+        }
+        .popover(isPresented: $showAccountMenu){
+            VStack{
+                Button("1"){}
+                Button("关闭"){showAccountMenu = false}
             }
+            .padding()
+        }
+    }
+}
+// 分数界面
+struct ScoreView:View{
+    var body:some View{
+        NavigationStack{
+            Text("")
+                .navigationTitle("详细分数")
+        }
+    }
+}
+// 二维码界面
+struct CodeView:View{
+    var body:some View{
+        NavigationStack{
+            Text("")
+                .navigationTitle("登入二维码")
         }
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+// 歌曲界面
+struct MusicView:View{
+    var body:some View{
+        NavigationStack{
+            Text("")
+                .navigationTitle("歌曲查询")
+        }
+    }
+}
+// 选项界面
+struct ToolsView:View{
+    var body:some View{
+        NavigationStack{
+            Text("")
+                .navigationTitle("实用工具")
+        }
+    }
 }
