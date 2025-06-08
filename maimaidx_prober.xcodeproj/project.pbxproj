@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D53335FC2DEF25AB00AB169C /* zh-api-document.md in Resources */ = {isa = PBXBuildFile; fileRef = D53335FB2DEF25AB00AB169C /* zh-api-document.md */; };
 		D541424D2DEDECFA0028636A /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = D541424C2DEDECF40028636A /* readme.md */; };
+		D5E9F65F2DF5B4E4009757F2 /* account-manage-document.md in Resources */ = {isa = PBXBuildFile; fileRef = D5E9F65E2DF5B4D2009757F2 /* account-manage-document.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		D590C9BD2DED91380088B233 /* maimaidx_prober.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maimaidx_prober.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D590C9CE2DED913B0088B233 /* maimaidx_proberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maimaidx_proberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D590C9D82DED913C0088B233 /* maimaidx_proberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maimaidx_proberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E9F65E2DF5B4D2009757F2 /* account-manage-document.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "account-manage-document.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -95,6 +97,7 @@
 		D590C9B42DED91380088B233 = {
 			isa = PBXGroup;
 			children = (
+				D5E9F65E2DF5B4D2009757F2 /* account-manage-document.md */,
 				D53335FB2DEF25AB00AB169C /* zh-api-document.md */,
 				D541424C2DEDECF40028636A /* readme.md */,
 				D590C9BF2DED91380088B233 /* maimaidx_prober */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E9F65F2DF5B4E4009757F2 /* account-manage-document.md in Resources */,
 				D53335FC2DEF25AB00AB169C /* zh-api-document.md in Resources */,
 				D541424D2DEDECFA0028636A /* readme.md in Resources */,
 			);
