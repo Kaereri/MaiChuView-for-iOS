@@ -5,6 +5,7 @@
 //  Created by 枫羽云玲 on 2025/6/2.
 //
 
+
 import SwiftUI
 import SwiftData
 
@@ -37,10 +38,10 @@ struct ContentView: View {
                     Text("歌曲")
                 }
             //选项
-            ToolsView()
+            OptView()
                 .tabItem{
                     Image(systemName: "wrench.and.screwdriver")
-                    Text("工具")
+                    Text("设置")
                 }
             
         }
@@ -58,18 +59,6 @@ struct HomeView:View{
         NavigationStack{
             Text("")
                 .navigationTitle("概况")
-                .toolbar {
-                    // 账户
-                    ToolbarItem(placement: .topBarTrailing){
-                        Button(
-                            action: {
-                                showAccountMenu = true
-                            }
-                        ){
-                            Image(systemName: "person.crop.circle")
-                        }
-                    }
-                }
             // 传分
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing){
@@ -134,11 +123,93 @@ struct MusicView:View{
     }
 }
 // 选项界面
-struct ToolsView:View{
+struct OptView:View{
+    @State private var showAddUser = false
+    @State private var inputUsername = ""
+    @State private var inputToken = ""
+    @State private var inputQQ = ""
     var body:some View{
         NavigationStack{
             Text("")
-                .navigationTitle("实用工具")
+            Button("添加用户"){
+                showAddUser = true
+            }
+            .sheet(isPresented: $showAddUser){
+                AddUserPop(inputUsername: $inputUsername, inputToken: $inputToken,inputQQ: $inputQQ,isPresented: $showAddUser)
+            }
+                .navigationTitle("设置")
+            
+        }
+    }
+}
+
+//添加用户界面
+
+struct AddUserPop: View {
+    @Environment(\.modelContext) private var modelContext
+    @State private var username = ""
+    var accountManager: UserAccountManager {
+            UserAccountManager(context: modelContext)
+        }
+    // 原有的用户名绑定变量
+    @Binding var inputUsername: String
+    
+    // 新增加的绑定变量
+    @Binding var inputToken: String      // token（密码样式）
+    @Binding var inputQQ: String         // QQ号
+    
+    @Binding var isPresented: Bool
+    @Environment(\.modelContext) private var context
+    
+    var body: some View {
+        NavigationStack {
+            Form {  // 使用Form以获得更好的分组样式
+                // 用户名
+                Section(header: Text("用户信息")) {
+                    TextField("用户名", text: $inputUsername)
+                    
+                    // Token（密码样式）
+                    SecureField("Token", text: $inputToken)
+                    
+                    // QQ号（带数字键盘）
+                    TextField("QQ号", text: $inputQQ)
+                        .keyboardType(.numberPad)
+                }
+                
+                // 备注（多行文本）
+            }
+            .navigationTitle("添加新用户")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                // 左上角取消按钮
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("取消") {
+                        isPresented = false
+                    }
+                }
+                
+                // 右上角确定按钮
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("确定") {
+                        // 在这里处理确定逻辑
+                        print("用户: \(inputUsername)")
+                        print("Token: \(inputToken)")
+                        print("QQ号: \(inputQQ)")
+                        do {
+                            try accountManager.addUser(
+                                username: inputUsername,
+                                rating: 88888,
+                                grade: "初心者",
+                                token: inputToken
+                            )
+                        } catch {
+                            print("添加失败: \(error)")
+                        }
+                        isPresented = false
+                    }
+                    .disabled(inputUsername.isEmpty)  // 用户名不能为空
+                }
+            }
         }
     }
 }
