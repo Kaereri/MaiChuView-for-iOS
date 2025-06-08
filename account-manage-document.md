@@ -9,9 +9,9 @@
         }
 ```
 
-##下面是使用方法
+## 下面是使用方法
 
- ###添加用户
+ ### 添加用户
  ```swift
  do {
      try accountManager.addUser(
@@ -26,7 +26,7 @@
  }
  ```
 
- ###获取用户
+ ### 获取用户
  ```swift
  do {
      let result = try accountManager.getUser(username: "田所浩二")
@@ -35,7 +35,7 @@
      print("获取失败: \(error)")
  }
 ```
- ###更新Token
+ ### 更新Token
  ```swift
  do {
      try accountManager.updateToken(username: "田所浩二", newToken: "HOMO1145141919810")
@@ -45,7 +45,7 @@
  }
 ```
 
- ###删除用户
+ ### 删除用户
  ```swift
  do {
      try accountManager.deleteUser(username: "田所浩二")
